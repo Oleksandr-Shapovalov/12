@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  font-family: "Pacifico", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svetofor {
+  position: relative;
+  padding: 50px 30px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto 0 auto;
+  border-radius: 500px;
+  background-color: rgb(43, 43, 43);
+}
+
+.svetofor:hover .add {
+  transform: scale(1);
+}
+.svetofor div {
+  flex: 0 1 33.333%;
+  min-height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  font-size: 100px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(73, 73, 73);
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+.add {
+  position: absolute;
+  top: 15%;
+  left: -150%;
+  width: 100px;
+  height: 100px;
+  background: #000;
+  transform: scale(0);
+  transition: transform 0.4s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px !important;
+  font-weight: 500;
+  color: brown;
+  text-align: center;
+}
+.svetofor div:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+.red {
+  animation-name: red;
+}
+
+.yellow {
+  animation-name: yellow;
+  animation-delay: 3s;
+}
+.green {
+  animation-name: green;
+  animation-delay: 6s;
+}
+@keyframes red {
+  0% {
+    transform: scale(1.1);
+    background-color: red;
+    box-shadow: 0px 0px 30px 19px red;
+  }
+  70% {
+    transform: scale(1.1);
+    background-color: red;
+    box-shadow: 0px 0px 30px 19px red;
+  }
+  75% {
+    transform: scale(1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+  80% {
+    transform: scale(1.1);
+    background-color: red;
+    box-shadow: 0px 0px 30px 19px red;
+  }
+  85% {
+    transform: scale(1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+  90% {
+    transform: scale(1.1);
+    background-color: red;
+    box-shadow: 0px 0px 30px 19px red;
+  }
+  95% {
+    transform: scale(1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+}
+@keyframes yellow {
+  0% {
+    transform: scale(1);
+    background-color: yellow;
+    box-shadow: 0px 0px 30px 19px yellow;
+  }
+  70% {
+    transform: scale(1);
+    background-color: yellow;
+    box-shadow: 0px 0px 30px 19px yellow;
+  }
+  75% {
+    transform: scale(1.1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+  80% {
+    transform: scale(1);
+    background-color: yellow;
+    box-shadow: 0px 0px 30px 19px yellow;
+  }
+  85% {
+    transform: scale(1.1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+  90% {
+    transform: scale(1);
+    background-color: yellow;
+    box-shadow: 0px 0px 30px 19px yellow;
+  }
+  95% {
+    transform: scale(1.1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+
+  100% {
+    transform: scale(1.1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+}
+@keyframes green {
+  0% {
+    transform: scale(1);
+    background-color: green;
+    box-shadow: 0px 0px 30px 19px green;
+  }
+  70% {
+    transform: scale(1);
+    background-color: green;
+    box-shadow: 0px 0px 30px 19px green;
+  }
+  75% {
+    transform: scale(1.1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+  80% {
+    transform: scale(1);
+    background-color: green;
+    box-shadow: 0px 0px 30px 19px green;
+  }
+  85% {
+    transform: scale(1.1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+  90% {
+    transform: scale(1);
+    background-color: green;
+    box-shadow: 0px 0px 30px 19px green;
+  }
+  95% {
+    transform: scale(1.1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+
+  100% {
+    transform: scale(1.1);
+    background-color: rgb(73, 73, 73);
+    box-shadow: 0px 0px 30px 19px rgb(73, 73, 73);
+  }
+}
